@@ -2,16 +2,18 @@
 
 Runs programs on solar events.
 
-## Installation.
+## Installation
 
-First, install dependencies using:
+First, install python dependencies:
 
 ```shell
   sudo pip3 install absl-py
   sudo pip3 install astral
 ```
 
-Then, build and install the package:
+You may also need to install [Bazel](https://docs.bazel.build/versions/master/install.html).
+
+Build and install the package:
 ```shell
   git clone https://github.com/AaronWebster/onsun.git
   cd onsun
@@ -19,7 +21,7 @@ Then, build and install the package:
   sudo dpkg -i bazel-bin/onsun_1.0.0_all.deb
 ```
 
-## Configuration.
+## Configuration
 Place the binaries/scripts you want to run in e.g. `/etc/onsun/sunrise.d/` and
 `/etc/onsun/dusk.d/`.  Modify the configuration in `/etc/onsun/config` as
 needed, for example.
