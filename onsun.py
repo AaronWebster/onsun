@@ -52,6 +52,8 @@ def main(argv):
     for exec_path in os.listdir(exec_dir):
       # Get full path and resolve symbolic links.
       exec_path = os.path.realpath(os.path.join(exec_dir, exec_path))
+      if not os.access(exec_path, os.X_OK):
+        logging.fatal('%s is not executable.', exec_path)
 
       # Apply offset from the config, if specified.
       offset_hours = 0
