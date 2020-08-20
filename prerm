@@ -1,0 +1,10 @@
+#!/bin/bash
+set -o errexit
+
+[[ "$1" != "remove" && "$1" != "purge" ]] && exit 0
+
+systemctl disable onsun.timer
+systemctl disable onsun.service
+systemctl stop onsun.timer
+systemctl stop onsun.service
+systemctl daemon-reload

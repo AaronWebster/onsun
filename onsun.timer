@@ -1,0 +1,8 @@
+[Unit]
+Description=Schedule sub-based events.
+
+[Timer]
+OnCalendar=*-*-* 0:10:00
+
+[Install]
+WantedBy=timers.target

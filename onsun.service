@@ -1,0 +1,9 @@
+[Unit]
+Description=Schedule sun-based events
+
+[Service]
+Type=oneshot
+ExecStart=/etc/onsun/onsun.py
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+#!/bin/bash
+set -o errexit
+
+[[ "$1" != "configure" ]] && exit 0
+
+systemctl daemon-reload
+systemctl enable onsun.timer
+systemctl enable onsun.service
+systemctl start onsun.timer
