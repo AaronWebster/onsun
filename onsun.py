@@ -25,7 +25,7 @@ import collections
 from absl import app
 from absl import logging
 
-BASEDIR = '/tmp/onsun'
+BASEDIR = '/etc/onsun'
 
 
 def main(argv):
