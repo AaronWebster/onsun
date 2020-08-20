@@ -20,8 +20,8 @@ Then, build and install the package:
 ```
 
 ## Configuration.
-Place the binaries/scripts you want to run in e.g. `/etc/solar/sunrise.d/` and
-`/etc/solar/dusk.d/`.  Modify the configuration in `/etc/onsun/config` as
+Place the binaries/scripts you want to run in e.g. `/etc/onsun/sunrise.d/` and
+`/etc/onsun/dusk.d/`.  Modify the configuration in `/etc/onsun/config` as
 needed, for example.
 
 ```
