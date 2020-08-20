@@ -70,8 +70,8 @@ def main(argv):
       if datetime.datetime.now(datetime.timezone.utc) < scheduled_exec:
         logging.info('%s will be run %s (%s)', exec_path,
                      scheduled_exec.astimezone(), name)
-        # os.system('/usr/bin/systemd-run --on-calendar="%s" %s' %
-        #           (scheduled_exec.strftime('%Y-%m-%d %H:%M:%S %Z'), exec_path))
+        os.system('/usr/bin/systemd-run --on-calendar="%s" %s' %
+                  (scheduled_exec.strftime('%Y-%m-%d %H:%M:%S %Z'), exec_path))
       else:
         logging.warning(
             'Executition time for %s (%s, %s) is in the past, ignoring.',
