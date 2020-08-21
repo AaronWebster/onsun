@@ -3,6 +3,9 @@ set -o errexit
 
 [[ "$1" != "configure" ]] && exit 0
 
+pip3 install --upgrade astral
+pip3 install --upgrade absl-py
+
 systemctl daemon-reload
 systemctl enable onsun.timer
 systemctl enable onsun.service

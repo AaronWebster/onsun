@@ -49,5 +49,5 @@ pkg_deb(
     package = "onsun",
     postinst = "postinst",
     prerm = "prerm",
-    version = "1.0.0",
+    version = "1.0.1",
 )
